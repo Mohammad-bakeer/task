@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="header">
+        <h1>ITechCollHub</h1>
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="container">
+        <div class="c1">
+            <div class="form-container">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    
+                    <label for="username-reg">Username:</label>
+                    <input type="text" id="username-reg" name="username-reg" required>
+                    
+                    <label for="password-reg">Password:</label>
+                    <input type="password" id="password-reg" name="password-reg" required>
+                    
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                    
+                    <div class="agree-terms">
+                        <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                        <label for="agree-terms">I agree to the <a href="#" class="terms-link">terms and conditions</a> of this website</label>
+                    </div>
+                    
+                    <button type="submit" id="sign-up-button">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
