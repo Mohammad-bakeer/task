@@ -24,27 +24,37 @@ body {
 }
 
 .container {
+	background-image: url("pic1.png");
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100vh; /* Full viewport height */
     background-color: #212122; /* Apply main color to all sections */
-    border-top: 2px solid #e74c3c; /* Add a top border between sections with sub color */
-    border-bottom: 2px solid #e74c3c; /* Add a bottom border between sections with sub color */
+    border-top: 2px solid #e74c3c; /* Add a top border using the sub color */
+    border-bottom: 2px solid #e74c3c; /* Add a bottom border using the sub color */
+}
+
+.form-container{
+	width:70%;
+	
 }
 
 .form-container,
 .info-container {
-    width: 60%; /* Sign-in section takes 60% width */
+     /* Sign-in section takes 60% width */
     height: 100%;
     padding: 20px;
-    background-color: #fff; /* Apply sub color as an accent */
-    color: #212122; /* Text color */
+    background-image: #e74c3c; /* Apply sub color to all sections */
+    color: #fff; /* Text color */
+}
+.info-container{
+	width:30%;
 }
 
 input[type="text"],
 input[type="password"] {
-    width: 100%;
+    width: 50%;
+    max-width: 70%; /* Limit the maximum width of input fields */
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
@@ -57,7 +67,7 @@ label {
     display: block;
     margin-bottom: 5px;
     width: 17%; /* Reduce the width of the labels in the form section */
-    color: #212122; /* Label text color */
+    color: #fff; /* Label text color */
 }
 
 .remember-me {
