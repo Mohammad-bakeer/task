@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212122; /* Main background color */
+    color: #fff; /* Text color */
+}
+
+.header {
+    background-color: #212122;
+    text-align: center;
+    height: 7%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align text and logo */
+}
+
+.logo {
+    width: 50px; /* Adjust the width of the logo as needed */
+    height: 50px; /* Make the logo round */
+    border-radius: 50%; /* Make the logo round */
+    margin-left: 10px; /* Add some spacing between the logo and company name */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: red; /* Sub color */
+}
+
+.form-container,
+.info-container {
+    width: 60%; /* Sign-in section takes 60% width */
+    height: 100%;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #fff; /* Modern background color for the sign-in section */
+}
+
+.info-container {
+    width: 40%; /* Other section takes 40% width */
+    background-color: #fff; /* Modern background color for the other section */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.info-text {
+    font-size: 24px;
+    color: #333; /* Text color for the other section */
+    margin-bottom: 20px;
+}
+
+.join-text {
+    font-size: 16px;
+    color: #333; /* Text color for the other section */
+    margin-bottom: 10px;
+}
+
+.register-link {
+    color: #333; /* Text color for the other section */
+    text-decoration: underline;
+}
