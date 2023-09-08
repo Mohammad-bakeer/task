@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #212122; /* Main background color */
     color: #fff; /* Text color */
+	overflow:hidden;
 }
 
 .header {
@@ -17,7 +18,7 @@ body {
 }
 
 .logo {
-    width: 50px; /* Adjust the width of the logo as needed */
+    width: 52px; /* Adjust the width of the logo as needed */
     height: 50px; /* Make the logo round */
     border-radius: 50%; /* Make the logo round */
     margin-left: 10px; /* Add some spacing between the logo and company name */
@@ -31,52 +32,59 @@ body {
     flex-direction: column; /* Change to a column layout */
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    background-color: #212122; /* Apply main color to all sections */
+    height: 110vh; /* Slightly larger container */
+    background-color: #c0392b; /* Darker shade of red */
     border-top: 2px solid #e74c3c; /* Add a top border using the sub color */
     border-bottom: 2px solid #e74c3c; /* Add a bottom border using the sub color */
 }
 
 .form-container {
-    width: 70%; /* Sign-in section takes 70% width */
-    max-width: 400px; /* Limit the maximum width of the form container */
-    padding: 20px;
-    background-color: #e74c3c; /* Apply sub color to the form section */
-    color: #fff; /* Text color */
-    text-align: center; /* Center-align form content */
+  padding: 20px;
 }
 
 .info-container {
-    width: 70%; /* Info section takes 70% width */
-    max-width: 400px; /* Limit the maximum width of the info container */
     padding: 20px;
-    background-color: #e74c3c; /* Apply sub color to the info section */
-    color: #fff; /* Text color */
-    text-align: center; /* Center-align info content */
+}
+.c1{
+	 width: 70%; /* Info section takes 70% width */
+    max-width: 450px; /* Limit the maximum width of the info container */
+    padding: 20px;
+    background-color: #990f02; /* Apply sub color to the info section */
+    color: black; /* Text color changed to black-grey */
+    text-align: left; /* Move the text to the left */
+	border-radius:50px;
 }
 
 input[type="text"],
 input[type="password"] {
-    width: 100%;
+    width: 75%;
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    background-color: #fff; /* Input background color */
-    color: #212122; /* Input text color */
+    border-radius: 50px;
+    background-color: #212122; /* Input background color */
+    color: #fff; /* Input text color */
+	font-size:16px;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     width: 100%;
-    color: #fff; /* Label text color */
+    color: black; /* Label text color changed to black-grey */
 }
 
 .remember-me {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the checkbox and label */
+    justify-content: flex-start; /* Move the text to the left */
+    margin-top: 5px; /* Add space between the checkbox and text */
+	font-size:16px;
+}
+
+input[type="checkbox"] {
+    border-radius: 50%; /* Make the checkbox round */
+    margin-right: 5px; /* Add space between the checkbox and text */
 }
 
 button {
@@ -90,15 +98,29 @@ button {
 
 .info-text {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
 }
 
-.join-text {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
+
 
 .register-link {
-    color: #333;
+    color: black;
+	font-size:18px;
     text-decoration: underline;
+}
+input[type="checkbox"] {
+    appearance: none; /* Hide the default checkbox */
+    -webkit-appearance: none; /* Hide the default checkbox on webkit browsers */
+    width: 20px; /* Set the width and height to create a circle */
+    height: 20px;
+    border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+    border: 2px solid black; /* Add a border for the circle */
+    background-color: transparent; /* Make the background transparent */
+    cursor: pointer;
+    vertical-align: middle; /* Align it vertically with text */
+	margin-bottom:10px;
+}
+input[type="checkbox"]:checked {
+    background-color: black; /* Change the background color when checked */
+	border: 2px solid white;
 }
