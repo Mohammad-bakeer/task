@@ -28,7 +28,9 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    background-color: red; /* Sub color */
+    background-color: #212122; /* Apply main color to all sections */
+    border-top: 2px solid #e74c3c; /* Add a top border between sections with sub color */
+    border-bottom: 2px solid #e74c3c; /* Add a bottom border between sections with sub color */
 }
 
 .form-container,
@@ -36,15 +38,8 @@ body {
     width: 60%; /* Sign-in section takes 60% width */
     height: 100%;
     padding: 20px;
-}
-
-.form-container {
-    background-color: #fff; /* Modern background color for the sign-in section */
-}
-
-.info-container {
-    width: 40%; /* Other section takes 40% width */
-    background-color: #fff; /* Modern background color for the other section */
+    background-color: #fff; /* Apply sub color as an accent */
+    color: #212122; /* Text color */
 }
 
 input[type="text"],
@@ -54,11 +49,15 @@ input[type="password"] {
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 3px;
+    background-color: #fff; /* Input background color */
+    color: #212122; /* Input text color */
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    width: 17%; /* Reduce the width of the labels in the form section */
+    color: #212122; /* Label text color */
 }
 
 .remember-me {
@@ -77,17 +76,15 @@ button {
 
 .info-text {
     font-size: 24px;
-    color: #333; /* Text color for the other section */
     margin-bottom: 20px;
 }
 
 .join-text {
     font-size: 16px;
-    color: #333; /* Text color for the other section */
     margin-bottom: 10px;
 }
 
 .register-link {
-    color: #333; /* Text color for the other section */
+    color: #333;
     text-decoration: underline;
 }
