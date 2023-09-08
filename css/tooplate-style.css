@@ -196,8 +196,8 @@ p:last-child { margin-bottom: 0; }
 
 .tm-btn:hover,
 .tm-btn:focus {
-    color: #33ccff;
-    border-color: #33ccff;
+    color: #FFFF00 ;
+    border-color: #FFFF00 ;
 }
 
 .tm-btn-submit {
