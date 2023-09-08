@@ -24,9 +24,12 @@ body {
 }
 
 .container {
-	background-image: url("pic1.png");
+    background-image: url("pic1.png"); /* Background image */
+    background-size: cover; /* Make the background image cover the container */
+    background-position: center; /* Center the background image */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Change to a column layout */
+    justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
     background-color: #212122; /* Apply main color to all sections */
@@ -34,27 +37,27 @@ body {
     border-bottom: 2px solid #e74c3c; /* Add a bottom border using the sub color */
 }
 
-.form-container{
-	width:70%;
-	
+.form-container {
+    width: 70%; /* Sign-in section takes 70% width */
+    max-width: 400px; /* Limit the maximum width of the form container */
+    padding: 20px;
+    background-color: #e74c3c; /* Apply sub color to the form section */
+    color: #fff; /* Text color */
+    text-align: center; /* Center-align form content */
 }
 
-.form-container,
 .info-container {
-     /* Sign-in section takes 60% width */
-    height: 100%;
+    width: 70%; /* Info section takes 70% width */
+    max-width: 400px; /* Limit the maximum width of the info container */
     padding: 20px;
-    background-image: #e74c3c; /* Apply sub color to all sections */
+    background-color: #e74c3c; /* Apply sub color to the info section */
     color: #fff; /* Text color */
-}
-.info-container{
-	width:30%;
+    text-align: center; /* Center-align info content */
 }
 
 input[type="text"],
 input[type="password"] {
-    width: 50%;
-    max-width: 70%; /* Limit the maximum width of input fields */
+    width: 100%;
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
@@ -66,13 +69,14 @@ input[type="password"] {
 label {
     display: block;
     margin-bottom: 5px;
-    width: 17%; /* Reduce the width of the labels in the form section */
+    width: 100%;
     color: #fff; /* Label text color */
 }
 
 .remember-me {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center the checkbox and label */
 }
 
 button {
